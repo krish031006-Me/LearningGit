@@ -38,6 +38,18 @@ You can also skip the staging area and commite directly
 # git branch lets us access all the branches that are present locally and there would a * in front of the branch we are currently on
 # git branch new-feature creates a branch named new feature
 # git checkout branch_name lets us switch to a branch and work on it rather than being in the main branch
+# git checkout -b branch_name creates the branch and then we check it out 
 # git branch -d branch_name lets you delete a branch in git if it's been merged but if it's not the use -D to delete it
 # git branch -m old_name new_name is used to rename a branch 
 # git branch -r shows all the remote branches on github and all
+# git merge branch_name is used to merge the branch back into main after our work is done in it
+# while merging you should move to the branch you are merging into
+# git rebase branch_name is another method to attach the branch straight to the main branch
+# while rebasing a branch you should move to the branch which you are merging
+# use git log to view the history of commits
+# git log --oneline shows all the commits in one line and use --reverse to view the oldest commits
+""" you can use git show to view a commit or various commits and it can be called by 
+    using the unique identifier or the commit, or by referencing with HEAD like 
+    HEAD~1 will get the very next commit form where HEAD is present with a commit"""
+# git ls-tree HEAD~1 will give you all the files involved in the HEAD~1 commit. Files are represented using blobs and dirs are by Tree
+# git show HEAD~1:path here you can get the exact shot of the file after providing it's name or path
