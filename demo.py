@@ -53,3 +53,5 @@ You can also skip the staging area and commite directly
     HEAD~1 will get the very next commit form where HEAD is present with a commit"""
 # git ls-tree HEAD~1 will give you all the files involved in the HEAD~1 commit. Files are represented using blobs and dirs are by Tree
 # git show HEAD~1:path here you can get the exact shot of the file after providing it's name or path
+# git restore file_name is used to restore the file back to it's last commit stage
+# git restore --staged file_name removes the file from the staging area
