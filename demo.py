@@ -55,3 +55,4 @@ You can also skip the staging area and commite directly
 # git show HEAD~1:path here you can get the exact shot of the file after providing it's name or path
 # git restore file_name is used to restore the file back to it's last commit stage
 # git restore --staged file_name removes the file from the staging area
+# git restore --source=HEAD~1 file_name is the command used to restore the file back even if it's commited.
