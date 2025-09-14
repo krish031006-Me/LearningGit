@@ -56,3 +56,5 @@ You can also skip the staging area and commite directly
 # git restore file_name is used to restore the file back to it's last commit stage
 # git restore --staged file_name removes the file from the staging area
 # git restore --source=HEAD~1 file_name is the command used to restore the file back even if it's commited.
+# you can add remote repo like this - git remote add origin link
+# and you can push the repo using git push origin main
