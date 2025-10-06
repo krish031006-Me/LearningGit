@@ -11,6 +11,7 @@ You can also skip the staging area and commit directly
 
 ech0 text > file_name will add the text to file but it works in write mode to make it work in read mode we use >>
 git commit -m "Some msg for later review" this is used to commit to git and -m here means msg which we add in inverted commas
+git commit -am "" lets you add all the files that were modified skipping the addition phase.
 you can type git commit without -m for gitbash to open a file and there you can add a descriptive msg under 80 characters i guess
 git ls-files is the command used to get the files currently present in the staging area
 git mv file1.js file2.js is the way to make git track all moving file and renaming the file
