@@ -38,11 +38,11 @@ and later merge it in the main branch
 
 git diff --staged is the command used to view all the changes in the index that haven't been committed yet!
 with git diff we can get all the changes that we did to the files that haven't been staged yet
-git branch lets us access all the branches that are present locally and there would be a * in front of the branch we are currently on
+git branch lets us see all the branches that are present locally and there would be a * in front of the branch we are currently on
 git branch new-feature creates a branch named new feature
 git checkout branch_name lets us switch to a branch and work on it rather than being in the main branch
 git checkout -b branch_name creates the branch and then we check it out
-git branch -d branch_name lets you delete a branch in git if it's been merged but if it's not the use -D to delete it
+git branch -d branch_name lets you delete a branch in git if it's been merged but if it's not, then use -D to delete it
 git branch -m old_name new_name is used to rename a branch
 git branch -r shows all the remote branches on github and all
 git merge branch_name is used to merge the branch back into main after our work is done in it
@@ -50,6 +50,7 @@ while merging you should move to the branch you are merging into
 git rebase branch_name is another method to attach the branch straight to the main branch
 while rebasing a branch you should move to the branch which you are merging
 use git log to view the history of commits
+you can also use .q to exit out of the logs in terminal
 git log --oneline shows all the commits in one line and use --reverse to view the oldest commits
 
 you can use git show to view a commit or various commits and it can be called by
@@ -63,5 +64,16 @@ git restore --staged file_name removes the file from the staging area
 git restore --source=HEAD~1 file_name is the command used to restore the file back even if it's committed
 you can add remote repo like this - git remote add origin link
 and you can push the repo using git push origin main
+also you can simply push using git push too 
+THe difference between git push and origin main git push-
+git push origin main is used when you are on some other branch and want to merge into main
+in this you are specially specifying that you want to push to the remote dir and merge the 
+current branch into the main one.
+on the other hand git push simply pushes to the remote repo
 git fetch origin main can fetch all the details from the remote repo and apply to you locally and then you can use git rebase origin main to apply the changes at top
 git pull origin main --rebase fetches the remote commits and applies them at the top of local files
+git reset is used to take the current dir back to it's previous state   
+    We use git reset --hard commit_hash to move to previous commit whose hash is been used.
+    git reset --hard origin gets us to the state that's on the github currently
+
+THis is a demo command to just see branching in real time
