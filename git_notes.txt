@@ -77,3 +77,5 @@ git reset is used to take the current dir back to it's previous state
     git reset --hard origin gets us to the state that's on the github currently
 
 THis is a demo command to just see branching in real time
+
+This is just a line of code to check for coderabbit
